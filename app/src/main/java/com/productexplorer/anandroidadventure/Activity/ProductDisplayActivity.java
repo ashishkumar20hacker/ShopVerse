@@ -49,7 +49,7 @@ public class ProductDisplayActivity extends AppCompatActivity {
                         if (productData.getImages().size() > 0) {
                             slideModels = new ArrayList<>();
                             for (String s : productData.getImages()) {
-                                slideModels.add(new SlideModel(s, ScaleTypes.FIT));
+                                slideModels.add(new SlideModel(s, ScaleTypes.CENTER_INSIDE));
                             }
                             binding.imageSlider.setImageList(slideModels);
                         }
